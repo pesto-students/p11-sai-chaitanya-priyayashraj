@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Font Awesome Icon Library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Restaurants Reviews</title>
+    <style>
+      .checked {
+        color: orange;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Restaurants Reviews</h1>
+      <span>
+        <a href="index.html">Home</a>
+        <a href="AddReview.html">Add Review</a>
+        <a href="AboutPage.html">About</a>
+      </span>
+    </header>
+    <main>
+      <form method="post" enctype="multipart/form-data">
+        <div>
+          <label for="fullName">Name:</label>
+          <input type="text" id="fullName" name="fullName" required />
+        </div>
+        <br />
+        <div>
+          <label for="restaurant">Restaurant?</label>
+          <select name="restaurant" id="restaurant">
+            <option value="greek">Greek Cafe</option>
+            <option value="main">Main street cafe</option>
+            <option value="german">German bakery</option>
+            <option value="irani">Irani cafe</option>
+          </select>
+        </div>
+        <div>
+          <label for="date">Date of visit? </label>
+          <input type="date" id="date" name="date" />
+        </div>
+        <br />
+        <div>
+          <label for="rating">Rating? </label>
+          <input type="number" id="rating" name="rating" max="5" min="1" />
+        </div>
+        <br />
+        <div>
+          <label for="details">Details</label>
+          <textarea id="details" name="details" rows="3" cols="50"></textarea>
+        </div>
+        <br />
+        <div>
+          <input type="submit" value="Submit" />
+        </div>
+      </form>
+    </main>
+    <footer>
+      <p>&copy; 2023 Restaurants Reviews</p>
+    </footer>
+  </body>
+</html>
